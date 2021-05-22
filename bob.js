@@ -4,7 +4,7 @@ class Bob{
     isStatic : false,
     restitution : 1,
      friction: 0,
-     density: 0.5,
+     density: 1.2,
       }
     this.body=Bodies.circle(x,y,100,option);
     this.x=x;
@@ -21,8 +21,8 @@ class Bob{
     fill("black");
     //rotate(angle);
     //rectMode(CENTER);
-    ellipseMode(RADIUS);
-    ellipse(pos.x,pos.y,50,50);
+    //ellipseMode(RADIUS);
+    ellipse(pos.x,pos.y,this.radius,this.radius);
     pop();     
     }    
 }

@@ -1,4 +1,3 @@
-
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -23,16 +22,16 @@ function setup() {
 	//Create the Bodies Here.
  
   roof=new Roof(400,100,500,30);
-	bob1=new Bob(200,300);
-	bob2=new Bob(300,300);
+	bob1=new Bob(300,300);
+	bob2=new Bob(350,300);
 	bob3=new Bob(400,300);
-	bob4=new Bob(500,300);
-	bob5=new Bob(600,300);
-	rope1=new Rope(bob1.body,{x:200,y:100});
-  rope2=new Rope(bob2.body,{x:300,y:100});
+	bob4=new Bob(450,300);
+	bob5=new Bob(500,300);
+	rope1=new Rope(bob1.body,{x:300,y:100});
+  rope2=new Rope(bob2.body,{x:350,y:100});
   rope3=new Rope(bob3.body,{x:400,y:100});
-  rope4=new Rope(bob4.body,{x:500,y:100});
-  rope5=new Rope(bob5.body,{x:600,y:100});
+  rope4=new Rope(bob4.body,{x:450,y:100});
+  rope5=new Rope(bob5.body,{x:500,y:100});
 	Engine.run(engine);
   
 }
